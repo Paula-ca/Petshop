@@ -15,20 +15,23 @@
     <header>
         <div class="cabecera">
             <span>Grandes ofertas en comederos</span>
-            <ul class="pais" type="none">
-                <li>Español</li>
-                <li>ARG$</li>
-            </ul>
+            <form action="" method="POST"></form>
+            <select name="pais" class="pais" type="none">
+                <option value="0" disabled>Español</option>
+                <option value="1">Español</option>
+                <option value="2">ARG$</option>
+            </select>
+        </form>
         </div>
 
         <nav>
             <img class="logo" src="img/Logo-nav.png" alt="Front CatDog">
             <img src="./img/menu-icon 1.png" class="menu" alt="Menu">
             <ul class="nav" type="none">
-                <li><img src="img/pawprint 1.png" alt="huellita">Categorias</li>
-                <li><img src="img\pawprint 1.png" alt="huellita">Pets</li>
-                <li><img src="img\pawprint 1.png" alt="huellita">Nosotros</li>
-                <li><img src="img\pawprint 1.png" alt="huellita">Contactanos</li>
+                <li>Categorias</li>
+                <li>Pets</li>
+                <li>Nosotros</li>
+                <li>Contactanos</li>
             </ul>
         </nav>
     </header>
@@ -69,9 +72,12 @@
         </section>
         <section id="contacto">
             <h3>Contáctanos</h3>
-            <p>Nombre y Apellido</p>
-            <p>Ingresa tu correo electronico</p>
-            <p>Teléfono</p>
+
+            <form action="" method="POST"></form>
+               <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
+               <input type="email" name="email" placeholder="Ingrese su correo el electrónico">
+               <input type="tel" name="teléfono" placeholder="Teléfono">
+            
             <div class="botones">
                 <a href="">Resetear</a>
                 <a href="">Enviar</a>
@@ -82,8 +88,7 @@
         <section id="suscripcion">
             <p class="suscripcion"><img src="img/enviar-correo_1.png" alt="Correo"> Suscríbete para más novedades</p>
             <div class="btn-suscripcion">
-                <textarea name="newsletter" placeholder="Ingresá tu correo electrónico" id="" cols="30"
-                    rows="1"></textarea>
+                <input type="email" name="email" placeholder="Ingrese su correo electrónico">
                 <a href="#">Suscribirme</a>
             </div>
         </section>
